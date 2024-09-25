@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0 100px; /* Márgenes laterales */
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    margin: 0 15px;
+}
+
+.header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    font-size: 24px; /* Aumentar tamaño de letra en el header */
+}
+
+.header-profile-image {
+    width: 10px; /* Ajustar el tamaño de la imagen a 100px */
+    height: 10px; /* Mantener la altura proporcional */
+    border-radius: 50%;
+    border: 3px solid #ADD8E6;
+    margin-bottom: 5px; /* Reducir margen inferior */
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: solid 10px rgba(226, 163, 117, 0.8);
+}
+
+.text-content {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.menu {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu a {
+    margin: 0 10px;
+}
+
+.btn-info {
+    background-color: #ADD8E6;
+    color: black;
+    border: none;
+    border-radius: 10px; /* Botones más grandes */
+    padding: 20px 40px; /* Aumentar tamaño de los botones */
+    font-size: 22pt; /* Aumentar la fuente de los botones */
+    font-family: 'Stint Ultra Condensed', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #87CEEB;
+}
+
+footer {
+    background-color: #090b80; /* Fondo azul oscuro */
+    padding: 30px 0;
+    color: white;
+    font-size: 18px; /* Aumentar tamaño de letra en el footer */
+    text-align: center;
+    margin: 0; /* Quitar márgenes del footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-logo, .footer-envelope {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #ADD8E6;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer responsive en pantallas grandes */
+@media (min-width: 768px) {
+    body {
+        margin: 0 150px; /* Márgenes laterales más grandes para pantallas medianas */
+    }
+
+    .container {
+        margin: 0 50px;
+    }
+
+    .header-profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-image {
+        max-width: 300px; /* Ajustar el tamaño de la imagen en pantallas grandes */
+    }
+
+    .text-content {
+        font-size: 20px;
+    }
+
+    .footer-content {
+        flex-direction: row; /* En pantallas grandes, los elementos se colocarán en una fila */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-logo, .footer-envelope {
+        width: 60px; /* Agrandar imágenes del footer en pantallas grandes */
+        height: 60px;
+    }
+
+    .footer p {
+        font-size: 20px; /* Aumentar tamaño de letra en pantallas grandes */
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: 0 200px; /* Márgenes laterales mayores para pantallas grandes */
+    }
+
+    .container {
+        margin: 0 100px;
+    }
+
+    .header-profile-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-image {
+        max-width: 400px;
+    }
+
+    .text-content {
+        font-size: 22px;
+    }
+
+    footer {
+        padding: 50px 0;
+    }
+}

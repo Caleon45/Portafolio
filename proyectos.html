@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PROYECTOS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container-fluid"> <!-- Container-fluid para ocupar todo el ancho -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #003366;">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="image.png" alt="Logo" style="max-height: 50px; margin-right: 10px;">
+                    PROYECTOS
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                        <a class="nav-link" href="trayectoria.html">HABILIDADES</a>
+                        <a class="nav-link" href="sobreMi.html">SOBRE MI</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <div class="content">
+            <h2 class="mb-4">Proyectos Destacados</h2>
+            
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <!-- Carrusel de Imágenes -->
+                        <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Cemtinela1.png" class="d-block w-100" alt="Proyecto 1 Imagen 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Centinela 3.png" class="d-block w-100" alt="Proyecto 1 Imagen 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Centinela 4.png" class="d-block w-100" alt="Proyecto 1 Imagen 3">
+                                </div>
+                                
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                        <!-- Cuerpo de la Card -->
+                        <div class="card-body">
+                            <h5 class="card-title">Centinela Store</h5>
+                            <p class="card-text">Pagina web del cuidado de la piel.</p>
+                            <!-- Botones -->
+                            <div class="d-flex justify-content-between">
+                                <!-- Botón Más Info -->
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#infoProject1" 
+                                        aria-expanded="false" aria-controls="infoProject1">
+                                    Más Info
+                                </button>
+                                <!-- Botón GitHub -->
+                                <a href="https://github.com/Caleon45/Centinela_Store-main.git" class="btn btn-secondary" target="_blank">GitHub</a>
+                            </div>
+                            <!-- Contenido Desplegable -->
+                            <div class="collapse mt-3" id="infoProject1">
+                                <div class="card card-body">
+                                    Trabajé en equipo para desarrollar un proyecto documentado bajo la metodología Scrum, cumpliendo con todos sus principios. En mi rol de Product Owner (PO), creé una interfaz administrativa robusta para gestionar inventarios, pedidos y usuarios, así como una interfaz amigable para los clientes. Utilicé HTML, CSS y JavaScript para diseñar y programar el sitio, asegurando que fuera interactivo y responsivo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de Card 1 -->
+
+                <!-- Card 2 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <!-- Carrusel de Imágenes -->
+                        <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="San andres 2.jpg" class="d-block w-100" alt="Proyecto 2 Imagen 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="San Andres 3.png" class="d-block w-100" alt="Proyecto 2 Imagen 2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                        <!-- Cuerpo de la Card -->
+                        <div class="card-body">
+                            <h5 class="card-title">Turismo San Andres</h5>
+                            <p class="card-text">Pagina web donde se filtra los lugares de hospedaje de San Andres</p>
+                            <!-- Botones -->
+                            <div class="d-flex justify-content-between">
+                                <!-- Botón Más Info -->
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#infoProject2" 
+                                        aria-expanded="false" aria-controls="infoProject2">
+                                    Más Info
+                                </button>
+                                <!-- Botón GitHub -->
+                                <a href="https://github.com/Caleon45/TurismoEnSanAndres.git" class="btn btn-secondary" target="_blank">GitHub</a>
+                            </div>
+                            <!-- Contenido Desplegable -->
+                            <div class="collapse mt-3" id="infoProject2">
+                                <div class="card card-body">
+                                    En el proyecto Turismo San Andrés, trabajamos en equipo para desarrollar un sistema distribuido. Mi contribución principal fue la creación de una base de datos no relacional utilizando MongoDB y el desarrollo de parte del front-end. Creamos una página web que almacena datos de hoteles, hostales y almacenes. Además, implementamos un sistema de calificación donde los usuarios pueden dejar reseñas y calificaciones de hasta 5 estrellas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de Card 2 -->
+
+              <!-- Card 3 -->
+<div class="col-12 mb-4">
+    <div class="card">
+        <!-- Video de YouTube -->
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/4S0rYHsIAwg" title="Video del Proyecto 3" allowfullscreen></iframe>
+        </div>
+        <!-- Cuerpo de la Card -->
+        <div class="card-body">
+            <h5 class="card-title">Apple</h5>
+            <p class="card-text">Edicion en After Effects, cortometraje de Apple</p>
+            <!-- Botones -->
+            <div class="d-flex justify-content-between">
+                <!-- Botón Más Info -->
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#infoProject3" 
+                        aria-expanded="false" aria-controls="infoProject3">
+                    Más Info
+                </button>
+                <!-- Botón YouTube -->
+                <a href="https://www.youtube.com/watch?v=4S0rYHsIAwg" class="btn btn-youtube" target="_blank">YouTube</a>
+            </div>
+            <!-- Contenido Desplegable -->
+            <div class="collapse mt-3" id="infoProject3">
+                <div class="card card-body">
+                    Utilicé Adobe After Effects para desarrollar este cortometraje, aprovechando las herramientas avanzadas del software. Implementé técnicas de animación y efectos visuales para crear un resultado profesional y de alta calidad, adecuado para un entorno académico.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de Card 3 -->
+
+<!-- Fin de Card 3 -->
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="pngwing.com (2).png" alt="Logo" class="footer-logo">
+                    <p><a href="https://github.com/Caleon45" target="_blank">https://github.com/Caleon45</a></p>
+                </div>
+                <div class="footer-right">
+                    <img src="pngwing.com (3).png" alt="Envelope" class="footer-envelope">
+                    <p>camleon@uniboyaca.edu.co</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #003366; /* Azul oscuro */
+}
+
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    font-size: 16pt; /* Tamaño del texto */
+    color: white;
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-link {
+    color: white !important; /* Color del texto de los enlaces */
+    font-size: 16pt;
+    text-decoration: none; /* Sin subrayado */
+    margin-left: 20px; /* Espacio entre enlaces */
+}
+
+.nav-link:hover {
+    color: #ADD8E6; /* Cambia el color al pasar el mouse */
+}
+
+/* Contenido */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #003366; /* Azul oscuro */
+    padding: 20px 0; /* Espacio en la parte superior e inferior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: auto; /* Coloca el footer al final */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo del contenido del footer */
+    padding: 0 20px; /* Espacio interno en los laterales */
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo, .footer-envelope {
+    width: 40px; /* Ajusta el tamaño de los íconos */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.footer-left p, .footer-right p {
+    margin: 0;
+    color: white;
+}
+
+.footer-left a {
+    color: white; /* Color del enlace */
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    text-decoration: underline; /* Subrayado del enlace al pasar el ratón */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 10px; /* Reduce el espacio lateral en pantallas más pequeñas */
+    }
+
+    .navbar-brand {
+        font-size: 20px; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .nav-link {
+        font-size: 14pt; /* Reduce el tamaño del texto de los enlaces */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        margin-bottom: 10px; /* Espacio entre las secciones */
+    }
+
+    .footer-logo, .footer-envelope {
+        width: 30px; /* Ajusta el tamaño de los íconos en pantallas pequeñas */
+    }
+}
