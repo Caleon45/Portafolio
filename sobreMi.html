@@ -1,68 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Sobre Mi</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                max-width: 1200px; /* Ancho máximo del contenedor */
-                margin: 0 auto; /* Márgenes automáticos para centrar */
-                padding: 0 20px; /* Espacio a los lados */
-            }
-            .header,
-            .footer {
-                background-color: #000; /* Fondo oscuro */
-                text-align: center;
-                padding: 20px 0;
-                color: white;
-            }
-            .header {
-                margin-bottom: 20px; /* Espacio debajo del header */
-            }
-            .footer {
-                margin-top: 20px; /* Espacio encima del footer */
-            }
-            .menu {
-                text-align: center;
-                margin: 20px 0; /* Espacio alrededor del menú */
-            }
-            .menu-button {
-                background-color: #ADD8E6; /* Color azul claro */
-                padding: 10px 20px;
-                margin-right: 10px; /* Espacio entre botones */
-                text-decoration: none; /* Quitar subrayado de los enlaces */
-                color: black; /* Color del texto de los botones */
-                border-radius: 5%; /* Bordes redondeados */
-                border: none; /* Sin bordes */
-                font-size: 16pt; /* Tamaño de la fuente */
-            }
-            .menu-button:last-child {
-                margin-right: 0; /* Quitar margen derecho del último botón */
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>SOBRE MI</h1>
-                <nav>
-                    <a href="index.html" class="menu-button">INICIO</a>
-                    <a href="proyectos.html" class="menu-button">PROYECTOS</a>
-                    <a href="trayectoria.html" class="menu-button">TRAYECTORIA</a>
-                </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container-fluid"> <!-- Container-fluid para ocupar todo el ancho -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="image.png" alt="Logo" style="max-height: 50px; margin-right: 10px;">
+                    SOBRE MI
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                        <a class="nav-link" href="proyectos.html">PROYECTOS</a>
+                        <a class="nav-link" href="trayectoria.html">HABILIDADES</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer">
-                <p>Footer con información de contacto</p>
-            </div>
+        </nav>
+
+        <!-- Contenido principal -->
+        <div class="content my-5">
+            <!-- Línea de Tiempo -->
+            <section id="mi-trayectoria" class="my-5">
+                <h2 class="text-center">Mi Trayectoria</h2>
+                <div class="container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>2019 - Bachiller</h4>
+                                <p>Cuando culminé mis estudios básicos.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>2020 - Universidad</h4>
+                                <p>Año de inicio de mi periodo universitario.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>2025</h4>
+                                <p>Espero graduarme de la universidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- Cursos Culminados -->
+            <section class="cursos my-5">
+                <h2 class="section-title text-center">Cursos Culminados</h2>
+                <ul class="list-group">
+                    <li class="list-group-item curso-item">
+                        <h5>Curso: Desarrollo De Apps Móviles (40h)</h5>
+                        <p> Curso de dominio básico de las Apps y Android Studio.</p>
+                        <img src="Apps.jpg" alt="Curso 1" class="img-fluid curso-img">
+                    </li>
+                    <li class="list-group-item curso-item">
+                        <h5>Curso : Protege tu Negocio - Ciberseguridad en el Teletrabajo (2 horas)</h5>
+                        <p>Curso sobre conceptos básico de la ciberseguridad y sus aplicaciones al teletrabajo.</p>
+                        <img src="Ciber Seguridad.jpg" alt="Curso 2" class="img-fluid curso-img">
+                    </li>
+                    
+                </ul>
+            </section>
+
+            <!-- Habilidades Blandas -->
+            <section class="habilidades-blandas my-5">
+                <h2 class="section-title text-center">Habilidades Blandas</h2>
+                <ul class="list-group habilidades-list">
+                    <li class="list-group-item habilidad-item">
+                        <h5>Comunicación Efectiva</h5>
+                        <p>Capacidad para expresar ideas de manera clara y eficiente, tanto en entornos laborales como académicos.</p>
+                    </li>
+                    <li class="list-group-item habilidad-item">
+                        <h5>Trabajo en Equipo</h5>
+                        <p>Habilidad para colaborar con otros de forma efectiva y alcanzar objetivos comunes.</p>
+                    </li>
+                    <li class="list-group-item habilidad-item">
+                        <h5>Inglés</h5>
+                        <p>Actual mente tengo un B2 en inglés</p>
+                    </li>
+                    
+                </ul>
+            </section>
         </div>
-    </body>
-    </html>
-    
+
+         <!-- Pie de página -->
+<footer class="footer">
+    <div class="footer-content d-flex justify-content-around">
+        <div class="logo-container">
+            <a href="https://github.com/Caleon45" target="_blank">
+                <div class="logo-box">
+                    <img src="git.png" alt="GitHub" class="footer-logo" style="cursor: pointer;">
+                </div>
+            </a>
+        </div>
+        <div class="logo-container">
+            <a href="mailto:camleon@uniboyaca.edu.co">
+                <div class="logo-box">
+                    <img src="gmail.png" alt="Gmail" class="footer-envelope" style="cursor: pointer;">
+                </div>
+            </a>
+        </div>
+        <div class="logo-container">
+            <a href="https://www.linkedin.com/in/tu-nombre-de-usuario" target="_blank">
+                <div class="logo-box">
+                    <img src="link.png" alt="LinkedIn" class="footer-linkedin" style="cursor: pointer;">
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

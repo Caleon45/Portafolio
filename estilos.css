@@ -95,71 +95,57 @@ body {
 .skill-bar.illustrator { background-color: #F7C94C; } /* Color de Adobe Illustrator */
 .skill-bar.after-effects { background-color: #A162A8; } /* Color de After Effects */
 
+
 /* Pie de página */
 .footer {
-    background-color: #003366; /* Azul oscuro */
-    padding: 20px 0; /* Espacio arriba y abajo */
+    background-color: #003366; /* Color de fondo azul claro */
+    color: white;
+    padding: 40px; /* Aumenta el espacio superior e inferior */
+    text-align: center; /* Centrar el texto */
+    margin-top: auto; /* Asegura que se mantenga en la parte inferior */
+}
+
+/* Contenido del footer */
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre los logos */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que el contenido envuelva en pantallas pequeñas */
+    max-width: 1200px; /* Limita el ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+/* Estilo de los contenedores de logos */
+.logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
-/* Estilos para el contenido del footer */
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px; /* Limita el ancho máximo del contenido del footer */
-    padding: 0 20px; /* Espacio interno en los laterales */
+/* Estilo para cada logo */
+.logo-box {
+    background-color: #ffffff; /* Color de fondo blanco para cada logo */
+    border-radius: 50%; /* Hacer que el cuadro sea circular */
+    padding: 10px; /* Espaciado interno */
+    margin: 0 10px; /* Margen entre los logos */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
 }
 
-.footer-left, .footer-right {
-    display: flex;
-    align-items: center;
-}
-
-.footer-logo, .footer-envelope {
-    width: 40px; /* Ajusta el tamaño de los íconos */
-    height: auto;
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-}
-
-.footer-left p, .footer-right p {
-    margin: 0;
-    color: white;
-}
-
-.footer-left a {
-    color: white; /* Color del enlace */
-    text-decoration: none;
-}
-
-.footer-left a:hover {
-    text-decoration: underline; /* Subrayado del enlace al pasar el ratón */
+.footer-logo, .footer-envelope, .footer-linkedin {
+    width: 50px; /* Tamaño uniforme para todos los logos */
+    height: 50px; /* Asegura que sean cuadrados para que al aplicar border-radius sea circular */
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
-    .content {
-        padding: 15px; /* Ajusta el padding del contenido en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .footer-logo, .footer-envelope, .footer-linkedin {
+        width: 40px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+        height: 40px; /* Asegura que sean cuadrados para que al aplicar border-radius sea circular */
     }
 }
 
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-left, .footer-right {
-        margin-bottom: 10px; /* Espacio entre las secciones */
-    }
-
-    .footer-logo, .footer-envelope {
-        width: 30px; /* Ajusta el tamaño de los íconos en pantallas pequeñas */
-    }
 
     .navbar-nav {
         flex-direction: column;
@@ -189,7 +175,7 @@ body {
     .ratio iframe {
         height: 200px; /* Reducir altura en pantallas pequeñas */
     }
-}
+
 
 /* Tipografía homogénea para los títulos de las skills */
 .card-title {
@@ -213,7 +199,7 @@ body {
 
 /* Estilos para el botón YouTube */
 .btn-youtube {
-    background-color: #FF0000; /* Rojo */
+    background-color: #d15252; /* Rojo */
     border: none;
     font-size: 14px; /* Tamaño de fuente consistente */
     padding: 10px 20px; /* Padding consistente */
@@ -226,7 +212,7 @@ body {
 }
 
 .btn-youtube:hover {
-    background-color: #cc0000; /* Rojo más oscuro al pasar el ratón */
+    background-color: #7c0c0c; /* Rojo más oscuro al pasar el ratón */
     text-decoration: none; /* Sin subrayado al pasar el ratón */
 }
 
@@ -258,4 +244,181 @@ body {
 
 .btn-secondary:hover {
     background-color: #5a6268;
+}
+/*-----------------------------------------------------------
+/* Estilos generales para mantener el diseño limpio y sencillo */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo suave para mejor legibilidad */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 40px auto; /* Centrar el contenido y dar espacio */
+}
+
+/* Título de sección */
+.section-title {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos para la sección de cursos */
+.curso-item {
+    background-color: #ffffff; /* Fondo blanco para un diseño más simple */
+    padding: 10px; /* Reducción del padding */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #007396; /* Color de borde */
+    box-shadow: none; /* Sin sombra */
+}
+
+.curso-item h5 {
+    font-size: 20px; /* Tamaño de fuente mantenido */
+    color: #003366;
+    margin-bottom: 5px; /* Menos margen inferior */
+}
+
+.curso-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px; /* Ajustado para ser consistente */
+}
+
+/* Estilo para la sección de "Mi Trayectoria" */
+#mi-trayectoria {
+    padding: 50px 0;
+    position: relative;
+}
+
+/* Estilo para el encabezado "Mi Trayectoria" */
+#mi-trayectoria h2 {
+    font-size: 2rem; /* Tamaño de fuente similar a los otros encabezados */
+    color: #003366; /* Color del encabezado igual a los otros */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 30px; /* Espacio debajo del encabezado */
+    font-weight: bold; /* Negrita para igualar estilos */
+}
+
+
+/* Estilo para la línea de tiempo */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    max-width: 800px; /* Máximo ancho para mantener la centralidad */
+    margin: 0 auto; /* Centrar la línea de tiempo */
+}
+
+/* Estilo para cada elemento de la línea de tiempo */
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    width: 100%; /* Ancho completo del elemento */
+}
+
+/* Estilo para la línea vertical de la línea de tiempo */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%; /* Centrar la línea */
+    top: 0;
+    height: 100%; /* Ajustar la altura de la línea */
+    border-left: 2px solid #007396; /* Color de la línea de la línea de tiempo */
+    z-index: 1;
+    transform: translateX(-50%); /* Centrar la línea */
+}
+
+/* Estilo para el contenido de cada elemento de la línea de tiempo */
+.timeline-content {
+    position: relative;
+    background-color: #e7f3fe; /* Fondo para cada item */
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 45%; /* Ancho del contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Asegurarse de que esté por encima de la línea */
+}
+
+/* Alternar el contenido a la izquierda y derecha */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 5%; /* Ajustar a la izquierda */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 50%; /* Ajustar a la derecha */
+}
+
+/* Estilo para los encabezados dentro de la línea de tiempo */
+.timeline-content h4 {
+    color: #003366; /* Color del encabezado */
+}
+
+/* Estilo para el texto dentro de la línea de tiempo */
+.timeline-content p {
+    color: #555; /* Color del texto */
+}
+
+/* Estilos para la sección de habilidades blandas */
+.habilidades-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.habilidad-item {
+    background-color: #e7f3fe; /* Fondo ligero para un diseño más simple */
+    padding: 15px; /* Padding moderado */
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    border-left: 5px solid #007396; /* Color de borde */
+}
+
+.habilidad-item h5 {
+    font-size: 20px; /* Tamaño de fuente mantenido */
+    color: #003366;
+    margin-bottom: 5px; /* Menos margen inferior */
+}
+
+.habilidad-item p {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: #555;
+}
+
+/* Mantener el diseño original de Cursos Culminados */
+.curso-item {
+    background-color: #f1f1f1; /* Fondo gris para la sección de cursos */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #007396; /* Color de borde */
+}
+
+.curso-item h5 {
+    font-size: 20px; /* Tamaño de fuente mantenido */
+    color: #003366;
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.curso-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.card iframe {
+    width: 100%; /* Asegura que el iframe ocupe todo el ancho del contenedor */
+    height: 100%; /* Ajusta la altura automáticamente */
 }
